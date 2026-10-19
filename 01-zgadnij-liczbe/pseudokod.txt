@@ -1,0 +1,54 @@
+ZGADNIJ LICZBĘ — PSEUDOKOD
+==========================
+
+Uzupełnij miejsca z kropkami (...). Jeden krok to jedno krótkie zdanie po polsku,
+bez składni Pythona. Wcięcie oznacza krok wewnątrz pętli albo warunku.
+
+Słowa kluczowe:
+  POWTARZAJ ... (pętla bez końca; wychodzisz z niej przez WYJDŹ Z PĘTLI)
+  JEŻELI ... / W PRZECIWNYM RAZIE JEŻELI ... / W PRZECIWNYM RAZIE
+  WRÓĆ NA POCZĄTEK PĘTLI    (w Pythonie: continue)
+  WYJDŹ Z PĘTLI             (w Pythonie: break)
+
+
+POCZĄTEK
+  wypisz powitanie i zasady gry
+  POWTARZAJ (kolejne gry)
+    wylosuj liczbę od 1 do 100 i zapamiętaj ją jako SEKRET
+    ustaw licznik prób na ...
+    POWTARZAJ (próby w jednej grze)
+      wczytaj od gracza ...
+      JEŻELI tekst nie składa się z samych cyfr
+        ...
+        WRÓĆ NA POCZĄTEK PĘTLI
+      zamień tekst na liczbę
+      JEŻELI ...
+        ...
+        WRÓĆ NA POCZĄTEK PĘTLI
+      ...
+      JEŻELI liczba jest mniejsza niż SEKRET
+        ...
+      W PRZECIWNYM RAZIE JEŻELI ...
+        ...
+      W PRZECIWNYM RAZIE
+        ...
+        WYJDŹ Z PĘTLI
+    zapytaj „Jeszcze raz? (t/n)”
+    JEŻELI ...
+      WYJDŹ Z PĘTLI
+  wypisz pożegnanie
+KONIEC
+
+
+DIAGRAM PRZEPŁYWU
+=================
+
+Narysuj na kartce diagram dla tego samego algorytmu. Kształty bloków:
+
+  owal            START i KONIEC
+  równoległobok   wejście i wyjście: wczytaj, wypisz
+  prostokąt       działanie: wylosuj, ustaw, zwiększ, zamień
+  romb            decyzja: pytanie z odpowiedzią TAK albo NIE (dwie strzałki wychodzące)
+
+Pętla na diagramie to strzałka, która wraca do wcześniejszego bloku.
+Sprawdź na diagramie: dokąd prowadzi strzałka po „To nie jest liczba.”, a dokąd po „Trafiony!”?
